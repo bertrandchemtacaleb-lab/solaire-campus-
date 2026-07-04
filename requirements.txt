@@ -1,0 +1,42 @@
+# --- Frontend ---
+streamlit==1.38.0
+
+# --- Backend / API ---
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+pydantic==2.9.2
+pydantic-settings==2.5.2
+
+# --- Base de données ---
+SQLAlchemy==2.0.35
+psycopg2-binary==2.9.9
+alembic==1.13.3
+
+# --- Authentification ---
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+
+# --- Graphiques / cartographie / 3D ---
+plotly==5.24.1
+folium==0.17.0
+streamlit-folium==0.23.1
+pyvista==0.44.1
+
+# --- IA ---
+scikit-learn==1.5.2
+tensorflow==2.17.0 ; extra == "deep-learning"
+
+# --- Météo / temps réel ---
+requests==2.32.3
+paho-mqtt==2.1.0
+pymodbus==3.7.1
+websockets==13.1
+
+# --- Exports ---
+reportlab==4.2.5
+openpyxl==3.1.5
+pandas==2.2.3
+
+# --- Tests ---
+pytest==8.3.3
+pytest-cov==5.0.0
