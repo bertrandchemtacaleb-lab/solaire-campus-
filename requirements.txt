@@ -16,15 +16,18 @@ alembic==1.13.3
 python-jose[cryptography]==3.3.0
 passlib[bcrypt]==1.7.4
 
-# --- Graphiques / cartographie / 3D ---
+# --- Graphiques / cartographie ---
 plotly==5.24.1
 folium==0.17.0
 streamlit-folium==0.23.1
-pyvista==0.44.1
+# pyvista==0.44.1  # à réactiver en Phase 3 (Digital Twin) — nécessite des
+# dépendances système (libGL, Xvfb) à déclarer dans packages.txt sur
+# Streamlit Cloud avant de la réinstaller.
 
 # --- IA ---
 scikit-learn==1.5.2
-tensorflow==2.17.0 ; extra == "deep-learning"
+# tensorflow==2.17.0  # à réactiver en Phase 4 si un modèle de deep
+# learning s'avère nécessaire (poids/temps d'installation importants).
 
 # --- Météo / temps réel ---
 requests==2.32.3
